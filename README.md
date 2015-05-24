@@ -1,6 +1,6 @@
 # meteor-saas
 
-This is an updated version of https://github.com/themeteorchef/saas-stripe with houston:admin added.
+This is a fork of https://github.com/themeteorchef/saas-stripe with houston:admin added and a bootstrap theme, made for a dining application.
 
 Run with meteor --settings=settings.json
 
