@@ -76,8 +76,8 @@ Meteor.methods({
                     },
                     payment: {
                       card: {
-                        type: stripeCustomer.cards.data[0].brand,
-                        lastFour: stripeCustomer.cards.data[0].last4
+                        type: stripeCustomer.sources.data[0].brand,
+                        lastFour: stripeCustomer.sources.data[0].last4
                       },
                       nextPaymentDue: response.current_period_end
                     },

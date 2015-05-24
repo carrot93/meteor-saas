@@ -1,13 +1,14 @@
 <template name="billingResubscribe">
-  <div class="row">
-    <div class="col-xs-12 col-sm-6 col-md-5 col-lg-4 center-block" style="float: none;">
+<section id="billingResubscribe" class="container content-section text-center">
+    <div class="row">
+    <div class="col-lg-8 col-lg-offset-2" style="float: none;">
       <div class="panel panel-default billing-module">
         <div class="panel-heading">
           <h3 class="panel-title"><a href="{{pathFor 'billing'}}" class="text-muted">Billing</a> / Resubscribe</h3>
         </div>
         <form id="resubscribe">
           <div class="panel-body">
-            <p class="alert alert-success">Looking to resubscribe to Todoodle? Awesome! We're excited to have you back. To flip the on switch for your account, go ahead and pick out a plan you'd like below. We'll also need your current credit card information. Keep in mind: <strong>this will charge your card immediately</strong>.</p>
+            <p class="alert alert-success">Looking to resubscribe to dineout.io? Awesome! We're excited to have you back. To flip the on switch for your account, go ahead and pick out a plan you'd like below. We'll also need your current credit card information. Keep in mind: <strong>this will charge your card immediately</strong>.</p>
             <div class="form-group">
               {{>selectPlan}}
             </div>
@@ -21,4 +22,5 @@
       </div>
     </div> <!-- end .col-xs-12 -->
   </div> <!-- end .row -->
+    </section>
 </template>

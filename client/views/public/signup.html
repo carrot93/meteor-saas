@@ -1,8 +1,9 @@
 <template name="signup">
+<section id="signup" class="container content-section text-center">
   <div class="row">
-    <div class="col-xs-12 col-sm-6 col-md-5 col-lg-5">
-      <h3 class="page-header">Start Slaying Tasks</h3>
-      <p>Signup for a <strong>FREE 1 day trial</strong> of Todoodle today and start dropkicking your todo list into the stratosphere. To get started, hit us up with an Email Address, Password, and your credit card details. Your card <strong>will not be charged</strong> until your trial ends!</p>
+    <div class="col-lg-8 col-lg-offset-2">
+      <h3 class="page-header">Start Dining Out</h3>
+      <p>Signup for a <strong>FREE 1 day trial</strong> of dineout.io today and start dining in the stratosphere. To get started, hit us up with an Email Address, Password, and your credit card details. Your card <strong>will not be charged</strong> until your trial ends!</p>
       <form id="application-signup" class="signup">
         <h4 class="page-header">Account details</h4>
         <div class="form-group">
@@ -20,7 +21,7 @@
         <h4 class="page-header">Payment Information</h4>
         <label>Which plan sounds <em>amazing</em>?</label>
         {{>selectPlan}}
-        <p class="alert alert-info"><strong>Jokes aside:</strong> to test out the credit card form, you can use the card number <strong>4242 4242 4242 4242 along with any future expiration month, year, and CVV</strong>. In one day, you'll receive an email from Todoodle confirming the end of your one day trial to showcase Stripe in action.</p>
+        <p class="alert alert-info"><strong>Jokes aside:</strong> to test out the credit card form, you can use the card number <strong>4242 4242 4242 4242 along with any future expiration month, year, and CVV</strong>. In one day, you'll receive an email from dineout.io confirming the end of your one day trial to showcase Stripe in action.</p>
         <div class="form-group">
           {{> Template.dynamic template="creditCard" data="signup"}}
         </div>
@@ -31,4 +32,5 @@
       </form>
     </div> <!-- end .col-xs-12 -->
   </div> <!-- end .row -->
+</section>
 </template>
