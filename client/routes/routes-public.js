@@ -7,6 +7,7 @@ Router.route('index', {
   path: '/',
   template: 'index',
   onBeforeAction: function(){
+      
     Session.set('currentRoute', 'index');
     this.next();
   }

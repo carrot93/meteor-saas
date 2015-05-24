@@ -107,3 +107,20 @@ Router.onBeforeAction(checkSubscription, {
     'billingResubscribe'
   ]
 });
+
+
+// always scroll to top on click
+var IR_Filters = {
+    scrollUp: function() {
+        $('body,html').animate({scrollTop:0},200);
+    },
+    navbarToggleCollapse: function() {
+        $('.navbar-collapse ').collapse('hide');
+    }
+};
+
+Router.onAfterAction(IR_Filters.navbarToggleCollapse);
+Router.onAfterAction(IR_Filters.scrollUp);
+
+
+    
