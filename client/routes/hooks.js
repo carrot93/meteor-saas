@@ -121,6 +121,3 @@ var IR_Filters = {
 
 Router.onAfterAction(IR_Filters.navbarToggleCollapse);
 Router.onAfterAction(IR_Filters.scrollUp);
-
-
-    

@@ -45,7 +45,7 @@ p {
 }
 
 a {
-    color: #42dca3;
+    color: #3D9999;
     -webkit-transition: all .2s ease-in-out;
     -moz-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out;
@@ -303,17 +303,17 @@ a:focus {
 }
 
 .btn-default {
-    border: 1px solid #42dca3;
-    color: #42dca3;
+    border: 1px solid #3D9999;
+    color: #3D9999;
     background-color: transparent;
 }
 
 .btn-default:hover,
 .btn-default:focus {
-    border: 1px solid #42dca3;
+    border: 1px solid #3D9999;
     outline: 0;
     color: #000;
-    background-color: #42dca3;
+    background-color: #3D9999;
 }
 
 ul.banner-social-buttons {
@@ -370,3 +370,7 @@ body {
     webkit-tap-highlight-color: rgba(255,255,255,.2);
 }
 .navbar-toggle .icon-bar { background: white; }
+
+.list-group-item.active, .list-group-item.active:hover, .list-group-item.active:focus { background-color: @color-secondary-2-0; border-color: @color-secondary-2-0; }
+
+
