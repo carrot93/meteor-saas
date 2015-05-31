@@ -1,0 +1,14 @@
+<template name="MailChimpListSubscribe">
+    <div id="mc-form-wrapper">
+        {{#if message}}
+            <label for="mc-email" id="mc-message">{{{message}}}</label>
+        {{/if}}
+        <form class="form-inline">
+            <div class="form-group">
+                <input class="email form-control" type="email" id="mc-email" placeholder="Enter your email"/>
+                <span id="mc-indicator" class="glyphicon glyphicon-{{indicator}}"></span>
+            </div>
+            <button class="btn btn-default subscribe" type="button" id="mc-button">Subscribe</button>
+        </form>
+    </div>
+</template>
