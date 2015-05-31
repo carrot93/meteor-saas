@@ -8,12 +8,13 @@
 	        <span class="icon-bar"></span>
 	        <span class="icon-bar"></span>
 	      </button>
-	      <a class="navbar-brand" href="{{pathFor 'index'}}">dineout.io</a>
+	      <a class="navbar-brand" href="{{pathFor 'index'}}"><img class="logo" src="/images/dineout.png" alt="dineout.io" /> </a>
 	    </div>
 	    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 	    	{{#if currentUser}}
 	      <ul class="nav navbar-nav">
-	        <li class="{{currentRoute 'lists'}}"><a href="{{pathFor 'todoLists'}}">Restaurant deals</a></li>
+            <li class="{{currentRoute 'restaurants'}}"><a href="{{pathFor 'restaurants'}}">Restaurants</a></li>
+              <li class="{{currentRoute 'lists'}}"><a href="{{pathFor 'todoLists'}}">Deals</a></li>
 	        <li class="{{currentRoute 'billing'}}"><a href="{{pathFor 'billing'}}">Billing</a></li>
 	      </ul>
 	      <ul class="nav navbar-nav navbar-right">
@@ -26,9 +27,14 @@
 	      </ul>
 	      {{else}}
 	      <ul class="nav navbar-nav navbar-right">
-					<li class="{{currentRoute 'index'}}"><a href="{{pathFor 'index'}}">Home</a></li>
+            <li class="{{currentRoute 'index'}}"><a href="{{pathFor 'index'}}">Home</a></li>
+            
+            <li class="{{currentRoute 'restaurants'}}"><a href="{{pathFor 'restaurants'}}">Restaurants</a></li>
+              
 	        <li class="{{currentRoute 'login'}}"><a href="{{pathFor 'login'}}">Login</a></li>
 	        <li class="{{currentRoute 'signup'}}"><a href="{{pathFor 'signup'}}">Sign Up</a></li>
+              
+              
 	      </ul>
 	      {{/if}}
 	    </div> <!-- end .navbar-collapse -->

@@ -1,0 +1,39 @@
+<template name="restaurantDetails">
+<section id="restaurants" class="container content-section text-center">
+  <div class="row">
+    <div class="col-lg-8 col-lg-offset-2">
+      <h3 class="page-header">YOUR BEST RESTAURANT CHOICE</h3>
+
+        <div class="row restaurantBody">    
+                        <h2>{{rating}}% - {{name}}</h2>
+
+        <div class="col-md-3 col-xs-5">
+            <img src="https://maps.googleapis.com/maps/api/staticmap?sensor=false&size=145x145&markers=color:blue%7C{{latitude}},{{longitude}}&zoom=13&key=AIzaSyCuqaK0OkJHdSbVmd1Ry-PUefXYRmL-NzA" />
+                    {{address}}<br /> {{county}}, {{zipcode}}<br />
+
+            {{#unless isEmpty webpage}}<a href="{{webpage}}"  target="_blank">Website</a>{{/unless}}
+            {{#unless isEmpty facebook}}<a href="{{facebook}}" target="_blank">Facebook</a>{{/unless}}
+            {{#unless isEmpty twitter}}<a href="{{twitter}}" target="_blank">Twitter</a>{{/unless}}
+
+            
+            <br /> <br />
+            
+            <a href="/deal/{{formatId _id}}">I WANT TO DINE HERE</a>
+            
+        </div>
+        <div class="col-md-9 col-xs-7">
+    
+            <img src="{{urbanImg}}" width="100%" />
+            
+
+            
+            </div> 
+    </div>
+        
+        
+    <p>Don't have an account? <a href="{{pathFor 'signup'}}">Sign Up</a>.</p>
+
+    </div> <!-- end .col-xs-12 -->
+  </div> <!-- end .row -->
+    </section>
+</template>

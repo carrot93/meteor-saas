@@ -47,6 +47,10 @@
     "stripe": {
       "testSecretKey": "sk_test_h0TcScQFRawiEfN9Z7bucP2W",
       "liveSecretKey": "sk_live_iiKLLCITVZQqiobJkh2Os5Lx"
-    }
+    },
+      "MailChimp": {
+		"apiKey": "4d467585a4bd35e6a3064dfba05e12bd-us11",
+		"listId": "249454fe62"
+	}
   }
 }

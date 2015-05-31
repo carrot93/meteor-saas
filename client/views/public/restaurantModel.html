@@ -1,0 +1,15 @@
+<template name="restaurantModel">
+    <div class="row restaurantBody">
+        <div class="col-md-2 col-xs-5">
+            <img src="https://maps.googleapis.com/maps/api/staticmap?sensor=false&size=145x145&markers=color:blue%7C{{latitude}},{{longitude}}&zoom=13&key=AIzaSyCuqaK0OkJHdSbVmd1Ry-PUefXYRmL-NzA" />
+        </div>
+        <div class="col-md-10 col-xs-7">
+            <h2>{{rating}}% - <a href="/restaurant/{{formatId _id}}">{{name}}</a></h2>
+            {{address}}, {{county}}, {{zipcode}}<br />
+            {{#unless isEmpty webpage}}<a href="{{webpage}}"  target="_blank">Website</a>{{/unless}}
+            {{#unless isEmpty facebook}}<a href="{{facebook}}" target="_blank">Facebook</a>{{/unless}}
+            {{#unless isEmpty twitter}}<a href="{{twitter}}" target="_blank">Twitter</a>{{/unless}}
+            
+        </div> 
+    </div>
+</template>

@@ -371,6 +371,21 @@ body {
 }
 .navbar-toggle .icon-bar { background: white; }
 
-.list-group-item.active, .list-group-item.active:hover, .list-group-item.active:focus { background-color: @color-secondary-2-0; border-color: @color-secondary-2-0; }
 
 
+
+
+.logo { height:50px; 
+    -webkit-transition: all 0.1s linear;
+       -moz-transition: all 0.1s linear;
+        -ms-transition: all 0.1s linear;
+         -o-transition: all 0.1s linear;
+            transition: all 0.1s linear;
+
+}
+.logo:hover { height:50px; 
+    opacity: 0.8;
+}
+.navbar-brand { padding:0px !important; }
+
+#about .fa-5 { font-size : 8em; }

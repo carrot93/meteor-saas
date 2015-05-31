@@ -1,0 +1,26 @@
+<template name="restaurants">
+<section id="restaurants" class="container content-section text-center">
+  <div class="row">
+    <div class="col-lg-8 col-lg-offset-2">
+      <h3 class="page-header">WHERE CAN YOU SAVE MONEY NEAR YOU?</h3>
+
+{{myLocation}}
+        
+    <div class="restaurantList">
+        {{#each lists}} 
+            {{> restaurantModel}}
+        {{/each}}
+    </div>
+
+    {{#if moreResults}}
+    <div id="showMoreResults" style="margin-left: 25px;">
+        <span class="loading">Loading...</span>
+    </div>
+        {{/if}}
+        
+    <p>Don't have an account? <a href="{{pathFor 'signup'}}">Sign Up</a>.</p>
+
+    </div> <!-- end .col-xs-12 -->
+  </div> <!-- end .row -->
+    </section>
+</template>

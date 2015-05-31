@@ -130,6 +130,7 @@ a {
     font-family: "Montserrat","Helvetica Neue",Helvetica,Arial,sans-serif;
     background-color: black;
     .navbar-brand {
+        margin-right:60px;
         font-weight: 700;
         &:focus {
             outline: none;
@@ -195,10 +196,10 @@ a {
     display: table;
     width: 100%;
     height: auto;
-    padding: 100px 0;
+    padding: 250px 0 10px 0;
     text-align: center;
     color: white;
-    background: url(../img/intro-bg.jpg) no-repeat bottom center scroll;
+    background: url('/images/background_web.jpg') no-repeat bottom center scroll;
     background-color: black;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -207,8 +208,9 @@ a {
     .intro-body {
         display: table-cell;
         vertical-align: middle;
+        padding-top:0;
         .brand-heading {
-            font-size: 40px;
+            font-size: 35px;
         }
         .intro-text {
             font-size: 18px;
@@ -218,8 +220,9 @@ a {
         height: 100%;
         padding: 0;
         .intro-body {
+            padding-top:300px;
             .brand-heading {
-                font-size: 100px;
+                font-size: 60px;
             }
             .intro-text {
                 font-size: 26px;
@@ -325,7 +328,7 @@ a {
 
 @media(min-width:767px) {
     .content-section {
-        padding-top: 250px;
+        padding-top: 150px;
     }
 
     .download-section {
@@ -409,5 +412,27 @@ body {
     webkit-tap-highlight-color: fade(white, 20%);
 }
 
-.list-group-item.active, .list-group-item.active:hover, .list-group-item.active:focus, .btn-success{ background-color: @color-secondary-2-0; border-color: @color-secondary-2-0; }
-.btn-success:hover { background-color: darken(@color-secondary-2-0,20%); border-color: darken(@color-secondary-2-0,20%); }
+.list-group-item.active, .list-group-item.active:hover, .list-group-item.active:focus, .btn-success {
+    background-color: @color-secondary-2-0; 
+    border-color: @color-secondary-2-0; 
+}
+.btn-success:hover {
+    background-color: darken(@color-secondary-2-0,20%); 
+    border-color: darken(@color-secondary-2-0,20%);
+}
+
+
+#mc-form-wrapper { 
+    padding:10px;
+    background-color:rgba(0,0,0,0.5);
+}
+
+
+
+i {
+	margin: 8px;
+	color: @color-primary-4; 
+}
+section#about,section#download,section#contact { padding-top:50px; }
+
+.restaurantBody { margin-bottom:20px; }

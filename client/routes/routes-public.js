@@ -32,6 +32,34 @@ Router.route('login', {
   }
 });
 
+Router.route('restaurants', {
+  path: '/restaurants',
+  template: 'restaurants',
+  onBeforeAction: function(){
+    Session.set('currentRoute', 'restaurants');
+    this.next();
+  }
+});
+
+
+Router.route('restaurantDetails', {
+  path: '/restaurant/:_id',
+  template: 'restaurantDetails',
+  subscriptions: function(){
+    var subs = [
+      Meteor.subscribe('restaurantDetails', this.params._id)
+    ]
+    return subs;
+  },
+  data: function(){
+    return Restaurants.findOne({"_id": this.params._id});
+  },
+  onBeforeAction: function(){
+    Session.set('currentRoute', 'restaurantDetails');
+    this.next();
+  }
+});
+    
 Router.route('recover-password', {
   path: '/recover-password',
   template: 'recoverPassword',
