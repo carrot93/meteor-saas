@@ -8,10 +8,6 @@ Template.registerHelper("isEmpty", function (str) {
 
 
 $(document).ready(function () {
-
-
+//        alert($.fn.jquery);
 });
 
-
-
-    

@@ -108,6 +108,7 @@ for(i=0; i < users.length; i++){
 Meteor.startup(function() {
 
 
+    
     if (Restaurants.find().count() === 0) {
 
 
